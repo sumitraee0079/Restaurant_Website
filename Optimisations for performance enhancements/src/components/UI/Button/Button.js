@@ -13,6 +13,15 @@ const Button = (props) => {
     >
       {props.children}
     </button>
+    
+    <button
+      type={props.type || 'button'}
+      className={`${classes.button} ${props.className}`}
+      onClick={props.onClick}
+      disabled={props.disabled}
+    >
+      {props.children}
+    </button>
   );
 };
 
