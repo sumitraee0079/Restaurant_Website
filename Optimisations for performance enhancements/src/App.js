@@ -17,6 +17,7 @@ function App() {
     <div className="app">
       <DemoList title={listTitle} items={listItems} />
       <Button onClick={changeTitleHandler}>Change List Title</Button>
+      <Button onClick={changeToAscendingOrderHandler}>Change to Ascending Order</Button>
     </div>
   );
 }
